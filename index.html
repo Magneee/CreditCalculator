@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кредитный калькулятор</title>
+  <link rel="stylesheet" href="build/style.css">
+</head>
+
+<body>
+
+
+  <h1>Кредитный калькулятор</h1>
+  <h3>Недвижимость</h3>
+
+  <!-- Форма К/К-->
+  <div class="container">
+
+
+    <form id="loan-form">
+      <div class="input-wrapper">
+        <label>Стоимость недвижимости</label>
+        <div class="input">
+          <input type="number" id="amount" placeholder="&#8381;" required oninput="updateSlider(this.value)" />
+          <input type="range" id="amount-slider" min="1000000" max="10000000" step="1000" value="0">
+
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <label>Первоначальный взнос:</label>
+        <div class="input">
+          <input type="number" id="ent" placeholder="&#8381;" required oninput="updateSlider(this.value)" />
+          <input type="range" id="more-slider" min="100000" max="10000000" step="100000" value="0">
+        </div>
+      </div>
+
+
+
+
+      <div class="input-wrapper">
+        <label>Срок кредита:</label>
+        <div class="input">
+          <input type="number" id="years" placeholder="Лет" required oninput="updateSlider(this.value)" />
+          <input type="range" id="second-slider" min="1" max="100" step="1" value="0">
+        </div>
+      </div>
+
+
+      <div class="input-wrapper">
+        <label>Процентная ставка</label>
+        <div class="input">
+          <input type="number" step="0.01" id="interest" placeholder="% " required oninput="updateSlider(this.value)" />
+          <input type="range" id="third-slider" min="1" max="100" step="1" value="0">
+
+
+        </div>
+      </div>
+    </form>
+
+    <!-- РЕЗУЛЬТАТ ТУТ -->
+    <div id="results" class="result">
+    </div>
+  </div>
+  <a href="index.html">
+  <button>Подать заявку онлайн</button>
+</a>
+  <table id="paymentScheduleTable">
+
+    <thead>
+      <tr>
+        <th>Номер платежа</th>
+        <th>Дата платежа</th>
+        <th>Остаток долга</th>
+        <th>В погашение долга</th>
+        <th>В погашение процентов</th>
+        <th>Платеж</th>
+      </tr>
+    </thead>
+
+    <tbody id="paymentScheduleBody"></tbody>
+  </table>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+
+</html>

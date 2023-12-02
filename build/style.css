@@ -1,0 +1,274 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Open+Sans:ital@1&family=Roboto&family=Sora&display=swap');
+
+@media (max-width: 990px) {
+   body{
+    justify-content: center;
+   }
+   .container{
+    flex-direction: column;
+   }
+   form{
+    height: auto !important; 
+   }
+   .result{
+    height: auto !important;
+   }
+  }
+
+
+
+body {
+    font-family: Montserrat;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    margin-top: 20px;
+}
+
+form {
+    padding: 20px;
+    width: 374.5px;
+    height: 474px;
+    border-right: 1px solid #DCDCDC;
+}
+
+.button-content {
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+input[type="number"] {
+    font-size: 16px;
+    width: 320px;
+    height: 35px;
+    border-radius: 6px;
+    gap: 5px;
+    border: 1px solid #DCDCDC;
+    padding-bottom: 0px;
+    border-bottom-width: 0px;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    color: #B5A08D;
+    padding: 10px 20px;
+    border: 2px solid #B5A08D;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: -webkit-fill-available;
+}
+
+input[type="submit"]:hover {
+    background-color: #fffefd;
+}
+
+.result {
+    padding: 20px;
+    width: 374.5px;
+    height: 474px;
+}
+
+.result h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.title {
+    width: 200px;
+    margin-left: 6%;
+}
+
+.tltle_main {
+    display: flex;
+    justify-content: start;
+}
+
+.result p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.sum {
+    color: #29282D;
+    font-weight: bold;
+
+}
+
+.sum::after {
+    content: "\20BD";
+    margin-left: 5px;
+}
+
+.sum_1 {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.sum_1::after {
+    content: "\20BD";
+    margin-left: 5px;
+}
+
+
+
+.container {
+    display: flex;
+    background-color: #F4F4F5;
+    width: max-content;
+    justify-content: start;
+    border: 1px solid #90909A;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    padding-bottom: 20px;
+}
+
+
+
+#amount-slider {
+    width: 97%;
+    bottom: 0;
+    border: none;
+    outline: none;
+    margin: 0;
+    height: 1px;
+    margin-left: 5px;
+}
+
+
+
+.input {
+    display: grid;
+    position: relative;
+    align-content: center;
+    justify-items: start;
+    justify-content: start;
+    border: 1px;
+}
+
+
+#second-slider {
+    width: 97%;
+    bottom: 0;
+    border: none;
+    outline: none;
+    margin: 0;
+    height: 1px;
+    margin-left: 5px;
+}
+
+#third-slider {
+    width: 97%;
+    bottom: 0;
+    border: none;
+    outline: none;
+    margin: 0;
+    height: 1px;
+    margin-left: 5px;
+}
+
+#more-slider {
+    width: 97%;
+    bottom: 0;
+    border: none;
+    outline: none;
+    margin: 0;
+    height: 1px;
+    margin-left: 5px;
+}
+
+::placeholder {
+    text-align: right;
+    color: black;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: start;
+    padding-left: 10px;
+}
+td{
+    background-color: #F4F4F5;
+    height: 30px;
+}
+
+th{
+    background-color: #B5A08D;
+    color: #ffffff;
+    height: 35px;
+}
+
+table {
+    width: 1349px;
+}
+
+button {
+    background-color: #B5A08D;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #B5A08D;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 235px;
+    height: 48px;
+    margin-bottom: 30px;
+}
+
+
