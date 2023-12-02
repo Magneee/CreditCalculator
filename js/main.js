@@ -27,18 +27,19 @@ function calculatePayment() {
     var totalInterest = (totalPayment - loanAmount).toFixed(2);
 
     ///В ПОГАШЕНИЕ ПРОЦЕНТОВ
-    var procents = totalInterest / years;
+    var procents = totalInterest / payments;
 
-    ///В ПОГАШЕНГИЕ ДОЛГА
-    var debt = ((totalPayment / years) - procents) / payments;
+    
 
     ////ПЛАТЕЖ
-    var paying = (totalPayment / years) / payments;
+     var paying = (totalPayment / payments);
 
     ///ОСТАТОК ДОЛГА
 
     var remaidner = amount - ent;
-
+    
+ ///В ПОГАШЕНИЕ ДОЛГА
+    var debt = paying - procents;
 
 
     // Показываем результаты
@@ -148,7 +149,7 @@ function displayPaymentSchedule(payments, monthlyPayment, loanAmount, payment, p
         var paymentDate = new Date();
         paymentDate.setMonth(paymentDate.getMonth() + i);
 
-        remaidner -= debt;
+        remaidner -= paying;
 
         // ЗНАЧЕНИЯ
         cellNumber.textContent = i;
